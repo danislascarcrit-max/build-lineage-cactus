@@ -44,10 +44,9 @@ jobs:
       - name: Clone Device, Vendor, & Kernel Trees
         run: |
           cd /home/runner/work/android
-          # Ganti URL dan branch ini dengan tree Redmi 6A kamu
-          git clone <URL_DEVICE_TREE_CACTUS> -b <branch_name> device/xiaomi/cactus
-          git clone <URL_VENDOR_TREE_CACTUS> -b <branch_name> vendor/xiaomi/cactus
-          git clone <URL_KERNEL_TREE_CACTUS> -b <branch_name> kernel/xiaomi/cactus
+          git clone https://github.com/begonia-lineage/android_device_xiaomi_cactus.git -b lineage-20.0 device/xiaomi/cactus
+          git clone https://github.com/begonia-lineage/android_vendor_xiaomi_cactus.git -b lineage-20.0 vendor/xiaomi/cactus
+          git clone https://github.com/begonia-lineage/android_kernel_xiaomi_cactus.git -b lineage-20.0 kernel/xiaomi/cactus
 
       - name: Compile ROM
         run: |
