@@ -44,10 +44,10 @@ jobs:
       - name: Clone Device, Vendor, & Kernel Trees
         run: |
           cd /home/runner/work/android
-          git clone https://github.com/begonia-lineage/android_device_xiaomi_cactus.git -b lineage-20.0 device/xiaomi/cactus
-          git clone https://github.com/begonia-lineage/android_vendor_xiaomi_cactus.git -b lineage-20.0 vendor/xiaomi/cactus
-          git clone https://github.com/begonia-lineage/android_kernel_xiaomi_cactus.git -b lineage-20.0 kernel/xiaomi/cactus
-
+          git clone https://github.com/crdroidandroid/android_device_xiaomi_cactus.git -b 13.0 device/xiaomi/cactus
+          git clone https://github.com/crdroidandroid/android_vendor_xiaomi_cactus.git -b 13.0 vendor/xiaomi/cactus
+          git clone https://github.com/crdroidandroid/android_kernel_xiaomi_cactus.git -b 13.0 kernel/xiaomi/cactus
+          
       - name: Compile ROM
         run: |
           cd /home/runner/work/android
